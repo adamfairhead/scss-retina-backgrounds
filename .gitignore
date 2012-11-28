@@ -1,0 +1,28 @@
+# Numerous always-ignore extensions
+*.ai
+*.zip
+*.psd
+*.diff
+*.err
+*.orig
+*.log
+*.rej
+*.swo
+*.swp
+*.vi
+*~
+*.sass-cache
+.sass-cache
+.sass-cache/*
+
+# Files to ignore
+wp-config.php
+
+# OS or Editor folders
+.DS_Store
+Thumbs.db
+*.esproj
+
+# Folders to ignore
+.idea
+.master

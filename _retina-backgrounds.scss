@@ -1,0 +1,17 @@
+@mixin background-image-2x-jpg($url) {
+    background-image: url($url + '.jpg');
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url($url + '@2x.jpg');
+    }
+}
+
+@mixin background-image-2x-png($url) {
+    background-image: url($url + '.png');
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.5), 
+    only screen and (-o-min-device-pixel-ratio: 3/2),
+    only screen and (min-device-pixel-ratio: 1.5) {
+        background-image: url($url + '@2x.png');
+    }
+}
