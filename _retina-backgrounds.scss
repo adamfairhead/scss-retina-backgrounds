@@ -20,6 +20,6 @@
 
 // Requires Modernizr
 @mixin svg-image($img-name) {
-  .svg & { background: image-url("#{$img-name}.svg") no-repeat; }
-  .no-svg & { background: image-url("#{$img-name}.png") no-repeat;}
+  .svg & { background-image: image-url("#{$img-name}.svg"); }
+  .no-svg & { background-image: image-url("#{$img-name}.png");}
 }

@@ -7,6 +7,8 @@ This is a lightweight SCSS mixin to make it quicker and easier to maintain stand
 
 Notice that the file extension is missing in the mixins. The extension lives in the mixin.
 
+### @2x jpg/png
+
 To add a jpg standard + @2x combo, use:
 
 	@include background-image-2x-jpg('path/to/file');
@@ -22,3 +24,14 @@ This will compile as:
     	}
 
 There's a background-image-2x-jpg() mixing for jpgs and background-image-2x-png() for pngs.
+
+### SVG with PNG fallback
+
+To use an svg with a png fallback, use:
+
+  @include svg-image('branding/logo');
+
+This will compile as:
+  
+  .svg .foo { background-image: url('path/to/file.svg'); }
+  .no-svg .foo { background-image: url('path/to/file.png'); }
