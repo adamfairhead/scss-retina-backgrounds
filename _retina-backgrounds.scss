@@ -17,3 +17,9 @@
         background-image: url($url + '@2x.png');
     }
 }
+
+// Requires Modernizr
+@mixin svg-image($img-name) {
+  .svg & { background: image-url("#{$img-name}.svg") no-repeat; }
+  .no-svg & { background: image-url("#{$img-name}.png") no-repeat;}
+}
